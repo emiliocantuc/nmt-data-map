@@ -122,7 +122,6 @@ class PerExampleLossCriterion(FairseqCriterion):
     def compute_accuracy(self, model, net_output, sample):
         lprobs, target = self.get_lprobs_and_target(model, net_output, sample)
         mask = target.ne(self.padding_idx)
-        tmp = lprobs.argmax(1).masked_select(mask).eq(target.masked_select(mask))
         n_correct = torch.sum(
             lprobs.argmax(1).masked_select(mask).eq(target.masked_select(mask))
         )
