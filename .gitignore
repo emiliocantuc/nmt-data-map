@@ -1,3 +1,9 @@
+# Custom
+examples/translation/iwslt14.tokenized.de-en/
+examples/translation/orig/de-en/
+examples/translation/orig/de-en.tgz
+*.csv
+
 # JetBrains PyCharm IDE
 .idea/
 
