@@ -17,3 +17,11 @@ rm -rf checkpoints; rm *.csv; CUDA_VISIBLE_DEVICES=0 fairseq-train \
     --report-accuracy \
     --max-epoch 20
 ```
+
+Preelim results in `viz.ipynb`. For example, 
+
+
+
+Using per-token accuracy doesn't seem to yield difficulty regions like in the cartography paper.
+
+TODO try other correctness metrics
