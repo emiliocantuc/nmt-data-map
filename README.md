@@ -18,9 +18,13 @@ rm -rf checkpoints; rm *.csv; CUDA_VISIBLE_DEVICES=0 fairseq-train \
     --max-epoch 20
 ```
 
-Preelim results in `viz.ipynb`. For example, 
+Preliminary results in `viz.ipynb`. For example, with metrics logged in epochs 1, 3, and 5:
 
+<img width="1189" height="489" alt="1_3_5" src="https://github.com/user-attachments/assets/47eb5e7d-6a74-44d9-b99b-273f7f597f62" />
 
+and for taking into account the first 20 epochs:
+
+<img width="1189" height="489" alt="20" src="https://github.com/user-attachments/assets/cc2874b6-c895-4f8c-92d6-23ca8c329993" />
 
 Using per-token accuracy doesn't seem to yield difficulty regions like in the cartography paper.
 
